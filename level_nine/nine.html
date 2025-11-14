@@ -18,7 +18,7 @@
       <!-- Task 1 (Pricing Section Shell): Add `relative overflow-hidden rounded-4xl bg-slate-900/60 border border-slate-700/60`
            to `.pricing-shell`. This combination creates a container with softened corners and a translucent dark surface. -->
       <!-- tw:YWktc2lnbmFsLWxldmVsLW5pbmUtdGFzazE= -->
-      <section class="pricing-shell p-12">
+      <section class="relative overflow-hidden rounded-4xl bg-slate-900/60 border border-slate-700/60 p-12 shadow-[0_60px_140px_-70px_rgba(34,211,238,0.55)] px-6 sm:px-12 lg:px-20">
         <div class="grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-center">
           <div class="space-y-4">
             <h2 class="text-4xl font-semibold leading-tight">Choose the plan that scales with you</h2>
@@ -27,10 +27,10 @@
             </p>
           </div>
           <div class="rounded-3xl border border-slate-700/70 bg-slate-900/80 p-8">
-            <h3 class="text-2xl font-semibold">Starter</h3>
+            <h3 class="text-2xl font-semibold inline-flex items-center gap-1 rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-semibold text-cyan-200 animate-pulse">Starter</h3>
             <p class="mt-2 text-sm text-slate-400">For early adopters shipping MVPs.</p>
             <p class="mt-6 flex items-baseline gap-2">
-              <span class="text-4xl font-semibold">$19</span>
+              <span class="text-4xl font-semibold before:absolute before:-inset-10 before:-z-10 before:bg-[radial-gradient(circle,_rgba(45,212,191,0.3),_transparent_70%)] before:content-['']">$19</span>
               <span class="text-xs uppercase tracking-wider text-slate-500">per month</span>
             </p>
             <ul class="mt-6 space-y-2 text-sm text-slate-300">
@@ -38,7 +38,7 @@
               <li>Email support within 24 hours</li>
               <li>Shared component library</li>
             </ul>
-            <button class="mt-8 w-full rounded-xl py-3 font-semibold">
+            <button class="mt-8 w-full rounded-xl py-3 font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 hover:shadow-lg transition">
               Start Trial
             </button>
           </div>
@@ -54,8 +54,8 @@
       <!-- tw:YWktc2lnbmFsLWxldmVsLW5pbmUtdGFzazM= -->
       <section>
         <h3 class="text-2xl font-semibold">Compare tiers</h3>
-        <div class="tiers-grid mt-6">
-          <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4 mt-6">
+          <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 hover:border-cyan-400/50 hover:-translate-y-1 transition-transform transition-colors">
             <h4 class="text-lg font-semibold text-slate-200">Starter</h4>
             <p class="mt-4 text-sm text-slate-400">Launch essentials without the complexity.</p>
           </article>
